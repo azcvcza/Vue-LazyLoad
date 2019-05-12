@@ -27,6 +27,7 @@
 				const { data } = await axios.get(
 					"?country=us&category=business&apiKey=065703927c66462286554ada16a686a1"
 				);
+				console.log(data);
 				this.articles = data.articles;
 			} catch (error) {
 				throw error;
