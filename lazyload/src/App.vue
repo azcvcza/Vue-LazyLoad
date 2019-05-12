@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <ArticlesList />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <a class="news-api-link" href="NewsAPI.org">powered by NewsAPI.org</a>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import ArticlesList from "./components/ArticlesList";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    ArticlesList
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+
+  
 }
+#app .news-api-link {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+  }
 </style>
