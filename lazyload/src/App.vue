@@ -2,7 +2,7 @@
   <div id="app">
     <ArticlesList />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
-    <a class="news-api-link" href="NewsAPI.org">powered by NewsAPI.org</a>
+    
   </div>
 </template>
 
